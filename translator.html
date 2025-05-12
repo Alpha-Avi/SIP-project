@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>translator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="translator.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="test">
+            <textarea name="" id="fromText" placeholder="Enter Text" resize="disabled"></textarea>
+            <textarea name="" id="toText" placeholder="translation" readonly resize="disabled"></textarea>
+        </div>
+        <div class="selectArea">
+            <div class="select01">
+                <i class="fa-solid fa-volume-high volume" id="from"></i>
+                <i class="fa-solid fa-copy copy" id="from"></i>
+                 <select id="select_one">
+                    <option value="eng">English</option>
+                    <option value="hin">Hindi</option>
+                 </select>
+            </div>
+            <div class="select02">
+                <i class="fa-solid fa-volume-high volume" id="to"></i>
+                <i class="fa-solid fa-copy copy" id="to"></i>
+                 <select id="select_sec">
+                    <option value="hin">Hindi</option>
+                    <option value="eng">English</option>      
+                 </select>
+            </div>
+        </div>
+        <button id="translate">translate</button>
+    </div>
+    <script src="countries.js"></script>
+    <script src="translator.js"></script>
+</body>
+</html>
+

@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Translator</title>
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="style.css" rel="stylesheet" />
+    <!-- <script defer src="script.js"></script> -->
 </head>
+
 <body>
-        <!--- section for upper menu -->
-    <section class="sec01">
-        <div class="div_flex" >
+    <section class="change_translator">
+        <div class="display_flev">
+            <div class="list_item">
+                <nav>
+                    <ul class="parent_element">
+                        <li><a href="#"><i class="fa-solid fa-language"></i><span class="text">Text</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-images"></i><span class="image">Images</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-file"></i><span class="doc">Document</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-code"></i><span class="web">website</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Translator Section -->
+    <section class="sec02">
+        <div class="div_flex">
             <div class="input_box">
-                <input type="text" placeholder="Enter text here " class="text_trans">
                 <select id="slt-lang" class="lang">
-                    <option disabled selected>select language</option>
-                    
+                    <option disabled selected>Select language</option>
                 </select>
+                <textarea id="sourceText" placeholder="Enter text here" class="text_trans"></textarea>
+
             </div>
             <div class="switch">
-                <!-- icon -->
+                <i class="fa-solid fa-right-left"></i>
             </div>
             <div class="input_box">
-                <input type="text" placeholder="translated text "  class="text_trans" readonly>
                 <select id="target_lang" class="lang">
-                    <option disabled selected>select language</option>
+                    <option disabled selected>Select language</option>
                 </select>
+                <textarea id="translatedText" placeholder="Translated text" class="text_trans" readonly></textarea>
+
             </div>
         </div>
     </section>
+
+    <!-- History Section -->
     <section>
-        <div>
-            <h3>History</h3>
-                
+        <div class="history-div">
+            <div class="logo_border">
+                <span class="history_logo">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </span>
+            </div>
+            <div class="text_history">
+                <h3>History</h3>
+                <!-- <ul id="historyList"></ul> -->
+            </div>
         </div>
     </section>
-    
 </body>
+
 </html>
